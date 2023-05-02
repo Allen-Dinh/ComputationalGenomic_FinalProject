@@ -1,0 +1,3 @@
+Original genotype data can be found and downloaded from https://wfitch.bio.uci.edu/~dspr/Data/index.html. 
+The file name is "HMM Results for pB RILs (at regularly spaced 10 kb intervals) (2GB)" under Genomic Data for Founders and RILs. 
+After downloading, subsetting columns will result in the same format as in subset_genotype file. The columns to be subsetted are chr, pos, ID, and the last 8 columns.
