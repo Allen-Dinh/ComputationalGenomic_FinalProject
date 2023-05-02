@@ -8,3 +8,9 @@ Repo Structure:
 - association.py: Python code to run association analysis to obtain the effect size estimate and p-value; input needed: subset_genotype and CG11128 (sample files in Data)
 - Result:
   - summarystat.csv: sample output for running association.py. this is intended to be used for later PGS calculation
+
+
+Running Instructions:
+- association.py:
+  - libraries used: pandas, statsmodels.api, scipy.stats
+  - download input data files as described and replace the path to those files in the script. 
