@@ -14,3 +14,6 @@ Running Instructions:
 - association.py:
   - libraries used: pandas, statsmodels.api, scipy.stats
   - download input data files as described and replace the path to those files in the script. 
+- PRScorrelation.py:
+  - libraries used: numpy, pandas, scipy.stats, sklearn.metrics, random, warnings
+  - download input data files as described and replace the path to those files in the script. 
