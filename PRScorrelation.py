@@ -91,7 +91,7 @@ PRS = PRS.iloc[:,1]
 
 # Perform filtertion and calculate correlation of PRS with expression
 
-$ merge effect size with summary statistics to obtain p-value at each position
+# merge effect size with summary statistics to obtain p-value at each position
 
 
 effectSizeP = pd.DataFrame()
@@ -110,7 +110,6 @@ for p in pval:
   filteredPRS = effectSizePFiltered.groupby('ID').sum()
   filteredPRS = filteredPRS.rename(columns={'effectSize': 'p-val-'+str(p)+'effectSize'})
   filteredPRS = filteredPRS.iloc[:,1]
-  #sumPRSpval = pd.merge(filteredPRS, sumPRSpval, left_index=True, right_index=True)
   filteredPRS = pd.merge(filteredPRS,expression,left_index=True, right_index=True )
   etid = random.sample(list(filteredPRS.index.unique()), k=int(len(filteredPRS.index.unique())*0.8))
   ttid = list(set(filteredPRS.index.unique()) - set(etid))
